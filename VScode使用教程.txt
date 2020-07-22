@@ -1,0 +1,61 @@
+﻿vscode使用教程
+
+1、下载安装，https://code.visualstudio.com/
+
+3、安装vuejs开发常用插件
+Extensions(Ctrl+Shift+X)直接搜索想要的插件
+
+Chinese (Simplified) Language  —— 汉化工具栏
+
+Auto Close Tag —— 自动闭合HTML/XML标签
+
+Vetur —— 语法高亮、智能感知、Emmet等
+包含格式化功能， Alt+Shift+F （格式化全文），Ctrl+K Ctrl+F（格式化选中代码，两个Ctrl需要同时按着）
+
+EsLint —— 语法纠错
+
+Debugger for Chrome —— 映射vscode上的断点到chrome上，方便调试
+
+Path Intellisense —— 自动提示文件路径，支持各种快速引入文件
+
+open in browser —— 支持快捷键与鼠标右键快速在浏览器中打开html文件，支持自定义打开指定的浏览器，包括：Firefox，Chrome，Opera，IE等
+
+4、设置vue开发环境
+4.1设置背景色为白色
+文件-->首选项-->颜色主题-->Light(Visual Studio)
+4.2设置打开显示多个标签页
+文件-->首选项-->设置-->工作台-->编辑管理-->Enable Preview
+4.4设置键盘快捷键
+文件-->首选项-->键盘快捷方式
+删除行  ctrl+D
+行注释  ctrl+/
+块注释  shift+ctrl+/   
+...
+
+ "*.vue": "html"
+
+多行选中：按住alt,用鼠标左键点击,可以出现多个光标,输入的代码可以在光标处同时增加。
+
+4.3设置工作区
+文件-->打开文件夹，
+将当前打开的文件夹设置工作区，文件-->将工作区另存为，输入工作区名称OK
+
+
+5、新建vue项目
+打开新建终端 Terminal  
+输入vue init webpack vue-demo，会报错!无法加载文件 D:\DevelopmenteTools\Nodejs\node_global\vue.ps1，因为在此系统上禁止运行脚本。
+PowerShell的执行政策阻止了该操作。
+输入get-ExecutionPolicy查看发现执行策略为受限状态：Restricted
+输入Set-ExecutionPolicy -Scope CurrentUser，参数提供值输入RemoteSigned解除受限状态，OK
+
+再次输入vue init webpack vue-demo，后续参考vue配置开发环境.txt，OK
+
+6、导入vue项目
+直接把vue项目放到工作区目录，刷新资源管理器即可
+
+7、
+
+
+
+
+
